@@ -1,284 +1,125 @@
-import { Button } from "@/components/ui/button"
-import "./Home.css"
+import { Button } from "@/components/ui/button";
+import "./Home.css";
 
+// TickIcon component for outlined tick icon
+function TickIcon(props) {
+  const { size = 24, strokeWidth = 2, color = 'currentColor', backgroundColor = 'white', ...rest } = props;
+
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      {...rest}
+    >
+      {/* Circle background */}
+      <circle cx="12" cy="12" r="10" fill={backgroundColor} stroke="none" />
+
+      {/* Tick symbol */}
+      <path d="M9 12l2 2 4-4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+
+// ArrowRightIcon component for arrow pointing right
+function ArrowRightIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="5" y1="12" x2="19" y2="12" />
+      <polyline points="12 5 19 12 12 19" />
+    </svg>
+  );
+}  
 
 export default function Home() {
   return (
-    <div className="bg-[#0C4A6E] min-h-screen">
-      {/* <nav className="bg-white py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <div className="flex items-center">
-            <FlagIcon className="h-8 w-8" />
-            <div className="ml-10 flex items-baseline space-x-4 hidden md:flex">
-              <a className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50" href="#">
-                Products
-              </a>
-              <a className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50" href="#">
-                Consult Us
-              </a>
-              <a className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50" href="#">
-                Pricing
-              </a>
-              <a className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50" href="#">
-                Resources
-              </a>
-            </div>
-          </div>
-          <div className="flex items-center">
-            <Button className="mr-4 hidden md:inline-flex" variant="outline">
-              Log in
-            </Button>
-            <Button className="hidden md:inline-flex">Sign Up</Button>
-            <Button className="md:hidden" size="icon" variant="outline">
-              <MenuIcon className="h-6 w-6" />
-              <span className="sr-only">Toggle menu</span>
-            </Button>
-          </div>
-        </div>
-      </nav> */}
-      <header className="max-w-7xl mx-auto mt-10 px-4 sm:px-6 lg:px-8">
+    <div className=" min-h-screen ">
+      <header className="bg-[#005D9c] max-w-7xl mx-auto pt-10 pb-10 px-4 sm:px-6 lg:px-8 rounded-bl-lg rounded-br-lg">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
-            <h1 className="text-4xl font-bold text-white leading-tight sm:text-5xl md:text-6xl">
+          <div className="flex items-start justify-center flex-col">
+            <h1 className="text-4xl font-500 text-white leading-tight sm:text-5xl md:text-6xl">
               ThreadHive is your all-in-one Clothing Platform
             </h1>
-            <ul className="mt-4 space-y-2">
-              <li className="flex items-center">
-                <CheckCircleIcon className="text-green-400 h-5 w-5" />
-                <span className="ml-2 text-white">G3's Leader in global employment platforms</span>
+            <ul className="mt-4 space-y-2 flex flex-row items-start sm:flex-col sm:justify-center sm:items-start">
+              <li className="flex items-center text-white pl-0">
+                <TickIcon size={30} color="black" backgroundColor="white" />
+                <span className="ml-2">G3's Leader in global employment platforms</span>
               </li>
-              <li className="flex items-center">
-                <CheckCircleIcon className="text-green-400 h-5 w-5" />
-                <span className="ml-2 text-white">90% customer satisfaction rate</span>
+              <li className="flex items-center text-white pl-0">
+                <TickIcon size={30} color="black" backgroundColor="white" />
+                <span className="ml-2">90% customer satisfaction rate</span>
               </li>
             </ul>
-            <Button className="mt-6 bg-white text-[#0C4A6E]">Get Started Now!</Button>
+
+            <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] px-4 py-2 flex items-center justify-between hover:bg-[#e2e2e2]">
+              Get Started Now <ArrowRightIcon className="ml-2 h-5 w-5" />
+            </Button>
+
+
+
           </div>
           <div>
+            {/* Placeholder image */}
             <img
               alt="Tailor working on clothes"
               className="rounded-lg w-full h-auto"
               height="360"
-              src="/placeholder.svg"
+              src="https://s3-alpha-sig.figma.com/img/6622/c6f6/399e335de15f059fea02dcc7ef2e65f1?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SvhE0jCjzyk2q3aak7xdR5CaNfCi5L-~igTl9BUSsd2kxxrjci2FBb1~by4khHs1Q36QZ4hj7CIOPWQm01AriIRD7J2nBIjRBcqqeOE0YobKNKSkidJaSQnTmFR7QNiru~LXmfXIfci1LT3ECTGen-3I2pXWTqO8N37djvgH8qHgXSptjZL1bR6i7ZBJc35PjmR7GqOyMO5c7zaTMMVm-G4wRM58MmnjhcYLPuBmzqZGsXY4vREScK0vWsDo~3dT4vcRK7BmrMnJJ3R6o0iTYDHACAysQDpjTDRjKMr~ml3tEeEfVmN-PgaQUAnbic5NeAQeO1KtV4QmPBsnuzpQtg__"
               style={{
                 aspectRatio: "360/360",
                 objectFit: "cover",
               }}
               width="360"
             />
-            <div className="flex justify-between mt-6 flex-col sm:flex-row">
+            {/* <div className="flex justify-between mt-6 flex-col sm:flex-row">
               <Button className="bg-white text-[#0C4A6E] mb-4 sm:mb-0" variant="secondary">
                 Find tailors near you
               </Button>
-              <Button className="bg-[#F4CA64] text-[#0C4A6E]">Find perfect Stitch-Partner</Button>
-            </div>
+              <Button className="bg-[#F4CA64] text-[#0C4A6E]">
+                Find perfect Stitch-Partner <ArrowRightIcon className="ml-2 h-5 w-5" />
+              </Button>
+            </div> */}
           </div>
         </div>
       </header>
       <main className="max-w-7xl mx-auto mt-12 px-4 sm:px-6 lg:px-8">
         <section className="text-center py-12 bg-white rounded-lg">
-          <h2 className="text-3xl font-bold text-[#0C4A6E] sm:text-4xl md:text-5xl">
-            Trusted by 25,000+ companies from startups to enterprise
+          <h2 className="text-3xl font-bold text-[#8f8f8f] sm:text-4xl md:text-5xl">
+            Trusted by <span className="text-[#424242]">25,000+</span> companies from startups to enterprise
           </h2>
           <div className="flex flex-wrap justify-center items-center mt-8 gap-4">
-            <img
-              alt="Shopify logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
-            <img
-              alt="Klarna logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
-            <img
-              alt="Reddit logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
-            <img
-              alt="Nike logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
-            <img
-              alt="Zapier logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
-            <img
-              alt="NU logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
-            <img
-              alt="Revolut logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
-            <img
-              alt="FOREVER 21 logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
-            <img
-              alt="Red Bull logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
-            <img
-              alt="Calvin Klein logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
-            <img
-              alt="Intercom logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
-            <img
-              alt="Hello Fresh logo"
-              className="m-4 sm:m-0"
-              height="40"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "100/40",
-                objectFit: "cover",
-              }}
-              width="100"
-            />
+            {/* Placeholder images */}
+            {Array.from({ length: 12 }).map((_, index) => (
+              <img
+                key={index}
+                alt={`Logo ${index + 1}`}
+                className="m-4 sm:m-0"
+                height="40"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "100/40",
+                  objectFit: "cover",
+                }}
+                width="100"
+              />
+            ))}
           </div>
         </section>
       </main>
     </div>
-  )
-}
-
-function CheckCircleIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-      <polyline points="22 4 12 14.01 9 11.01" />
-    </svg>
-  )
-}
-
-
-function FlagIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
-      <line x1="4" x2="4" y1="22" y2="15" />
-    </svg>
-  )
-}
-
-
-function MenuIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <line x1="4" x2="20" y1="12" y2="12" />
-      <line x1="4" x2="20" y1="6" y2="6" />
-      <line x1="4" x2="20" y1="18" y2="18" />
-    </svg>
-  )
+  );
 }

@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva } from "class-variance-authority";
-
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
@@ -10,12 +9,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },
@@ -31,17 +27,24 @@ const buttonVariants = cva(
       size: "default",
     },
   }
-)
+);
 
 const Button = React.forwardRef(({ className, variant, size, asChild = false, ...props }, ref) => {
-  const Comp = asChild ? Slot : "button"
-  return (
-    (<Comp
-      className={cn(buttonVariants({ variant, size, className }))}
-      ref={ref}
-      {...props} />)
-  );
-})
-Button.displayName = "Button"
+  const Comp = asChild ? Slot : "button";
 
-export { Button, buttonVariants }
+  // Dynamically generate hover class based on variant
+  const hoverClass = variant && buttonVariants({ variant }).includes("hover:")
+    ? buttonVariants({ variant }).replace(/(\s+|^)hover:([^ ]+)/g, '$1hover:$2/80') // Adjust hover intensity (e.g., /80)
+    : "";
+
+  return (
+    <Comp
+      className={cn(buttonVariants({ variant, size, className }), hoverClass)} // Combine base and hover classes
+      ref={ref}
+      {...props}
+    />
+  );
+});
+
+Button.displayName = "Button";
+export { Button, buttonVariants };
