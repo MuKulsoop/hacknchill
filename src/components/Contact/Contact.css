@@ -1,0 +1,124 @@
+/* Contact.css */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .main-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: row; /* Changed to column for better alignment */
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 80%;
+    margin-top: 20px; /* Added margin-top for spacing */
+  }
+  .contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 50px 10px 10px;
+    border-right: 2.5px solid #333;
+  }
+  .section-heading {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%; /* Ensure form takes full width */
+    max-width: 400px; /* Adjusted max-width for better responsiveness */
+  }
+  .custom-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .custom-input label {
+    font-size: 0.7em;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .custom-input input{
+    border: 2px solid #333;
+    border-radius: 8px;
+    min-width: 300px;
+    margin-top: 0;
+    padding: 5px 8px;
+  }
+  textarea{
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid black; /* Added border styling */
+    width: 100%;
+    min-width: 300px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  .send-button {
+    width: 30%;
+    border-radius: 8px;
+    padding: 8px 10px;
+    background-color: #f3db54;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  .get-in-touch-section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 50px;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px; /* Added margin-top for spacing */
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #333;
+  }
+  
+  .textWrapperContact {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .textWrapperContact h3 {
+    margin: 0; /* Remove margin to avoid extra spacing */
+    font-size: 1rem; /* Adjust font size if needed */
+  }
+  
+  .textWrapperContact span {
+    font-size: 0.9rem; /* Adjust font size for span */
+  }
+  .icon {
+    color: #f3d23d; /* Updated icon color */
+  }
+  

@@ -1,10 +1,11 @@
-
 import { Button } from "@/components/ui/button"
+import "./Home.css"
+
 
 export default function Home() {
   return (
     <div className="bg-[#0C4A6E] min-h-screen">
-      <nav className="bg-white py-4">
+      {/* <nav className="bg-white py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div className="flex items-center">
             <FlagIcon className="h-8 w-8" />
@@ -34,7 +35,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </nav>
+      </nav> */}
       <header className="max-w-7xl mx-auto mt-10 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
