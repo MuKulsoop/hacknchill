@@ -5,6 +5,8 @@ import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home.jsx'
 import Navbar from './components/Navbar/Navbar.jsx';
 import Contact from './components/Contact/Contact.jsx';
+import Details from "./components/Details/Details.jsx"
+
 function App() {
 
   return (
@@ -14,6 +16,7 @@ function App() {
        {/* <Route index exact element={<Home/>} /> */}
        <Route path='/contact' exact element={<Contact/>} />
        <Route path='/home' exact element={<Home />} />
+       <Route path='/details' exact element={<Details />} />
        
        {/* <Route path='/games' element={<Games/>}/>
        <Route path='/about' element={<About/>}/>
