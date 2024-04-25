@@ -117,11 +117,11 @@ export default function Home() {
         </section>
       </main>
       <main className="bg-gray-800 w-100 p-10 rounded-lg">
-        <h2 className="text-white text-4xl font-bold text-center ">You Can Do it All <br /> With ThreadHive</h2>
-        <section className=" mx-auto rounded-lg p-8 shadow-lg flex flex-row" style={{
-                    width: '85%',
-
-                  }}>
+        <h2 className="text-white text-4xl font-bold text-center ">You can do it all. <br /> With ThreadHive.</h2>
+        <section className=" mx-auto  p-8  flex flex-row " style={{
+          width: '85%',
+          borderBottom: '1.5px solid #ddd'
+        }}>
 
           <div className="bg-white rounded-lg w-1/2 h-full mr-4">
             <div className="p-6 pt-10  h-full">
@@ -158,7 +158,7 @@ export default function Home() {
 
           <div className="w-1/2 flex flex-col space-y-4">
             {/* Top Right Div */}
-            <div className="bg-[#7EBD42] rounded-lg p-6 h-full flex flex-col justify-between">
+            <div className="bg-[#7EBD42] rounded-lg p-6 h-full pt-10">
               <div>
                 <h3 className="text-white text-3xl font-semibold mb-4">Find Best Manufacturers near You</h3>
                 <p className="text-white">
@@ -171,7 +171,7 @@ export default function Home() {
             </div>
 
             {/* Bottom Right Div */}
-            <div className="bg-[#005D9c] rounded-lg p-6 h-full flex flex-col justify-between">
+            <div className="bg-[#005D9c] rounded-lg p-6 h-full   pt-10">
               <div>
                 <h3 className="text-white text-3xl font-semibold mb-4">Custom Alterations & Clothing Creation</h3>
                 <p className="text-white">
@@ -184,8 +184,26 @@ export default function Home() {
             </div>
           </div>
 
-
         </section>
+        <section className="mx-auto p-8 pb-0 flex flex-row items-center justify-evenly "
+        style={{
+          width: '80%',
+         
+        }}>
+          <div className="text-center mr-8">
+            <h1 className="text-5xl text-blue-300 mb-2">25+</h1>
+            <p className="text-sm text-white">Team of more than 25 Hivers</p>
+          </div>
+          <div className="text-center mr-8">
+            <h1 className="text-5xl text-blue-300 mb-2">25,000+</h1>
+            <p className="text-sm text-white">Trusted by 25,000+ customers</p>
+          </div>
+          <div className="text-center">
+            <h1 className="text-5xl text-blue-300 mb-2">&lt;48 hrs</h1>
+            <p className="text-sm text-white">Onboard Talent in as little as 48 hours</p>
+          </div>
+        </section>
+
       </main>
 
     </div>
