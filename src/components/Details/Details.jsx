@@ -9,16 +9,16 @@ const Details = () => {
           <p className="pt-4">Welcome to your Account</p>
           <ul className="options flex flex-col mt-7 items-center ">
             <li>
-              <div className="hover:bg-slate-400 w-100">My Orders</div>
+              <div className="hover:bg-slate-100 w-100 cursor-pointer px-11 py-3">My Orders</div>
             </li>
             <li>
-              <div className="hover:bg-slate-400 ">Wishlist</div>
+              <div className="hover:bg-slate-100 cursor-pointer px-11 py-3 ">Wishlist</div>
             </li>
             <li>
-              <div className="hover:bg-slate-400">My info</div>
+              <div className="hover:bg-slate-100 cursor-pointer px-11 py-3 ">My info</div>
             </li>
             <li>
-              <div className="hover:bg-slate-400">Sign Out</div>
+              <div className="hover:bg-slate-100 cursor-pointer px-11 py-3 ">Sign Out</div>
             </li>
           </ul>
         </div>
@@ -122,11 +122,35 @@ const Details = () => {
                 <span>Address</span>
                 <span className="text-black cursor-pointer"> Add new </span>
           </div>
-          <div className="card w-96 bg-slate-300 rounded-xl">
+          <div className="flex gap-7">
+          <div className="card w-96 bg-gray-100 rounded-xl">
                 <h2 className="p-3">Jhanvi Shah</h2>
-                <h3 className="p-2">8852486120</h3>
-                <p>1/4 Pragatinagar Flats, opp. jain derasar , near Jain
-derasar, Vijaynagar road </p>
+                <h3 className="p-2  text-gray-500">8852486120</h3>
+                <p className="p-2  text-gray-500">1/4 Pragatinagar Flats, opp. jain derasar , near Jainderasar, Vijaynagar road </p>
+                <button class="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200"> Home </button>
+                <button class="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200"> Default Shipping Address </button>
+                <span className="m-4 border-r-2 border-gray-300 pr-5 ">Remove</span>
+                <span>Edit</span>
+
+          </div>
+          <div className="card w-96 bg-gray-100 rounded-xl">
+                <h2 className="p-3 ">Jhanvi Shah</h2>
+                <h3 className="p-2  text-gray-500">8852486120</h3>
+                <p className="p-2  text-gray-500">1/4 Pragatinagar Flats, opp. jain derasar , near Jainderasar, Vijaynagar road </p>
+                <button class="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200"> Home </button>
+                <button class="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200"> Default Shipping Address </button>
+                <span className="m-4 border-r-2 border-gray-300 pr-5 ">Remove</span>
+                <span>Edit</span>
+          </div>
+          <div className="card w-96 bg-gray-100 rounded-xl">
+                <h2 className="p-3">Jhanvi Shah</h2>
+                <h3 className="p-2 text-gray-500">8852486120</h3>
+                <p className="p-2 text-gray-500">1/4 Pragatinagar Flats, opp. jain derasar , near Jainderasar, Vijaynagar road </p>
+                <button class="border text-gray-500 border-gray-500 bg-transparent px-4 py-2 rounded-md m-3 hover:bg-gray-200"> Home </button>
+                <button class="border text-gray-500 border-gray-500 bg-transparent px-4 py-2 rounded-md m-3 hover:bg-gray-200"> Default Shipping Address </button>
+                <span className="m-4 border-r-2 border-gray-300 pr-5" >Remove</span>
+                <span>Edit</span>
+          </div>
           </div>
         </div>
       </div>

@@ -43,12 +43,12 @@ function ArrowRightIcon(props) {
       <polyline points="12 5 19 12 12 19" />
     </svg>
   );
-}
+}  
 
 export default function Home() {
   return (
     <div className=" min-h-screen ">
-      <header className="bg-[#005D9c] w-100 pt-10 pb-10 px-4 sm:px-6 lg:px-8 rounded-bl-lg rounded-br-lg">
+      <header className="bg-[#005D9c] max-w-100 pt-10 pb-10 px-4 sm:px-6 lg:px-8 rounded-bl-lg rounded-br-lg">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="flex items-start justify-center flex-col">
             <h1 className="text-4xl font-500 text-white leading-tight sm:text-5xl md:text-6xl">
@@ -68,6 +68,9 @@ export default function Home() {
             <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] px-4 py-2 flex items-center justify-between hover:bg-[#e2e2e2]">
               Get Started Now <ArrowRightIcon className="ml-2 h-5 w-5" />
             </Button>
+
+
+
           </div>
           <div>
             {/* Placeholder image */}
@@ -98,7 +101,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-[#8f8f8f] sm:text-4xl md:text-5xl">
             Trusted by <span className="text-[#424242]">25,000+</span> companies from startups to enterprise
           </h2>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-wrap justify-center items-center mt-8 gap-4">
             {/* Placeholder images */}
             <div className="flex flex-wrap justify-center items-center mt-8 gap-6">
               <img src="/images/Company1.jpeg" alt="Company 1" className="h-13" />
