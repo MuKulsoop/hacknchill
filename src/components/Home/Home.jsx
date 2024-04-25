@@ -43,12 +43,12 @@ function ArrowRightIcon(props) {
       <polyline points="12 5 19 12 12 19" />
     </svg>
   );
-}
+}  
 
 export default function Home() {
   return (
     <div className=" min-h-screen ">
-      <header className="bg-[#005D9c] max-w-7xl mx-auto pt-10 pb-10 px-4 sm:px-6 lg:px-8 rounded-bl-lg rounded-br-lg">
+      <header className="bg-[#005D9c] max-w-100 pt-10 pb-10 px-4 sm:px-6 lg:px-8 rounded-bl-lg rounded-br-lg">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="flex items-start justify-center flex-col">
             <h1 className="text-4xl font-500 text-white leading-tight sm:text-5xl md:text-6xl">
@@ -68,6 +68,9 @@ export default function Home() {
             <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] px-4 py-2 flex items-center justify-between hover:bg-[#e2e2e2]">
               Get Started Now <ArrowRightIcon className="ml-2 h-5 w-5" />
             </Button>
+
+
+
           </div>
           <div>
             {/* Placeholder image */}
@@ -98,148 +101,22 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-[#8f8f8f] sm:text-4xl md:text-5xl">
             Trusted by <span className="text-[#424242]">25,000+</span> companies from startups to enterprise
           </h2>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-wrap justify-center items-center mt-8 gap-4">
             {/* Placeholder images */}
-            <div className="flex flex-wrap justify-center items-center mt-8 gap-6">
-              <img src="/images/Company1.jpeg" alt="Company 1" className="h-13" />
-              <img src="/images/Company2.jpeg" alt="Company 2" className="h-12" />
-              <img src="/images/Company3.jpeg" alt="Company 3" className="h-18" />
-              <img src="/images/Company4.jpeg" alt="Company 4" className="h-8" />
-              <img src="/images/Company5.jpeg" alt="Company 5" className="h-8" />
-              <img src="/images/Company6.jpeg" alt="Company 5" className="h-10" />
-            </div>
-          </div>
-
-
-        </section>
-      </main>
-      <main className="bg-gray-800 w-100 p-10 rounded-lg">
-        <h2 className="text-white text-4xl font-bold text-center ">You can do it all. <br /> With ThreadHive.</h2>
-        <section className=" mx-auto  p-8  flex flex-row " style={{
-          width: '85%',
-          borderBottom: '1.5px solid #ddd'
-        }}>
-
-          <div className="bg-white rounded-lg w-1/2 h-full mr-4">
-            <div className="p-6 pt-10  h-full">
-              <div className="bg-white  rounded-lg flex items-center flex-col">
-                <h3 className="text-3xl font-semibold mb-3"
-                  style={{
-                    width: '95%',
-
-                  }}>Tailor Discovery & Alterations</h3>
-                <p className="text-black mb-5"
-                  style={{
-                    width: '95%',
-
-                  }}>
-                  Instead of setting up your own entities, experience the speed of HireGO’s automated global hiring. Create compliant employment agreements and set up payroll and benefits—in a matter of clicks.
-                </p>
-                <div
-                  className="rounded-lg "
-                  style={{
-                    width: '95%',
-                    height: '20rem', // Adjust the height as needed
-                    backgroundImage: 'url(https://s3-alpha-sig.figma.com/img/a565/2b40/e3e2f7b926d44b2f122ad82fc873447a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KUX6UHX7bRiBvSScawRic37zcuVDBQqCctFssNNiDS~e4xF3NS13tmvb67tQEkS4tC1-Pd8inr5xmy3AYR8hq1ZDZjUFYb~nlQoZ5KKkN~yBkisLRj~qjSW08MXbDJQca6K6tkLkUajAAN0~EZaWNfPBVnFMK6IooxR58yx3QOCMTQu29uGSivRAIgYrSPiTPzzXyHYaBirgCdGfKiq3UO2qDmFZoZ5~rAWXaojlaKl2MD6SQ1Gq9znCb9ZryJiAjZX0Czb0MRL1iOLkpf~GtaW2tJfSH9F5hsoUQv6ZzUm2pdsy2k5a6zQN545YjY3x96CbG263IXSMHpn3xYBYjQ__)',
-                    backgroundPosition: '0 -300px', // Adjust the background position to show the desired part of the sprite
-                    backgroundSize: 'cover',
-                  }}
-                />
-              </div>
-              <Button className="mt-6 ml-4 rounded-lg bg-gray-300 text-[#0C4A6E] px-4 py-2  items-center  hover:bg-[#e2e2e2]">
-                Find tailors around you <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
-          </div>
-
-
-          <div className="w-1/2 flex flex-col space-y-4">
-            {/* Top Right Div */}
-            <div className="bg-[#7EBD42] rounded-lg p-6 h-full pt-10">
-              <div>
-                <h3 className="text-white text-3xl font-semibold mb-4">Find Best Manufacturers near You</h3>
-                <p className="text-white">
-                  Generate, edit, and sign compliant contracts in minutes and access management tools to streamline paperwork, onboarding, and payments.
-                </p>
-              </div>
-              <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 items-center hover:bg-[#e2e2e2]">
-                Find nearby Manufacturers <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
-
-            {/* Bottom Right Div */}
-            <div className="bg-[#005D9c] rounded-lg p-6 h-full   pt-10">
-              <div>
-                <h3 className="text-white text-3xl font-semibold mb-4">Custom Alterations & Clothing Creation</h3>
-                <p className="text-white">
-                  Assess global worker misclassification risks and compliantly convert contractors to full-timers, all under one platform.
-                </p>
-              </div>
-              <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 items-center hover:bg-[#e2e2e2]">
-                Customize it all <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
-          </div>
-
-        </section>
-        <section className="mx-auto p-8 pb-0 flex flex-row items-center justify-evenly "
-          style={{
-            width: '80%',
-
-          }}>
-          <div className="text-center mr-8">
-            <h1 className="text-5xl text-blue-300 mb-2">25+</h1>
-            <p className="text-sm text-white">Team of more than 25 Hivers</p>
-          </div>
-          <div className="text-center mr-8">
-            <h1 className="text-5xl text-blue-300 mb-2">25,000+</h1>
-            <p className="text-sm text-white">Trusted by 25,000+ customers</p>
-          </div>
-          <div className="text-center">
-            <h1 className="text-5xl text-blue-300 mb-2">&lt;48 hrs</h1>
-            <p className="text-sm text-white">Onboard Talent in as little as 48 hours</p>
-          </div>
-        </section>
-
-      </main>
-      <main className="w-full p-10 bg-gray-100 flex items-center flex-col">
-        <h1 className="text-5xl text-stone-800 text-center mb-8 mt-8 font-bold" style={{
-            width: '50%',
-
-          }}>Discover Expert Tailors in your Area</h1>
-        <section className="mx-auto p-8 w-100 flex flex-col items-center justify-center">
-          <div className="flex flex-row lg:flex-row-reverse items-center justify-evenly w-full">
-            <div className="w-full lg:w-1/2 flex flex-col items-start justify-center lg:order-2">
-              <h2 className="text-4xl font-semibold mb-4 text-[#005D9c]">Tailor Made Solutions for Your Style</h2>
-              <p className="text-gray-700  mb-5">
-              Our expert tailors offer personalized recommendations to perfect your style. With meticulous attention to detail and unparalleled craftsmanship, they ensure every garment reflects your unique vision.
-              </p>
-              <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 items-center hover:bg-[#e2e2e2] border-2 border-solid border-gray-400">
-                Explore Tailors & Atelier Solutions <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
-            <img
-              className="w-full lg:w-2/5  rounded-lg mt-8 lg:mt-0"
-              src="https://s3-alpha-sig.figma.com/img/f322/b0d8/c285a2f1a4f29c33ba23df12cc8aef6f?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CdwbKLVZzTZnvHreJ6vQgv3CO9L1meU6c6CxGg82LZcKVqDPHO9nBem8mysBZ-sRRY0~bRnYlc9RrCCfGlixtQbVlMX12r-fRwVCdJROXEd3rv~9HCU9vBLXZL6KYvVTn4YdeCOx~jDY7p90knZ-e4QhNlSmU~6MM~MoKGegOPRjnAjXAb~5UngMYihK8XlePxmOVhKj3TuSYauC0loxJRHPk74MMH2~tI13ZfSqIW1SvJ0ow5aiLWqB3t5M74oCEPCysX0yKs0Sd~IOU4dgajQwYEoDzc65VIL94dMYJScVRgYBP40WN7mpFdl5f9LhJFgKJmtKSdwSZZjwyObCRQ__"
-              alt=""
-            />
-          </div>
-          <div className="flex flex-row-reverse lg:flex-row items-center justify-evenly w-full mt-8">
-            
-            <img
-              className="w-full lg:w-2/5 rounded-lg mb-8 lg:mb-0"
-              src="https://s3-alpha-sig.figma.com/img/c67c/989d/f13c6b02f2c704a969ae98967095ecc2?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QRRkGhKBKh8o7vhRTLjKNexNSeKuWJMZ0dsJgHETKKtQyqgKh4IyUgBSco-ufUFZNPVQVHB9Edo9CBRgBiJ4VG5OXTTDP3PQ3Y~F3fE8ZjtL2v~OUNivxz8eUHxrEB59yLQ96lU6pu89cASfOCg7JCmax88O-4CVJM0m8zH2kTcQSgq4nZ-t2PgdtqHEviZcgkrP8gh2HueFxoZA4OylQXHGQcvvDUZruoqFect6Ns92382JAumNrST21MXN2QHtQvmlLkvuGSkI~h57Gd4He9vNR2OvT7MZzmGvZKSBEYS~R~Y3m9ek6MbG4JCUbPrd-J5OofaO1jW9L8X12d9u~Q__"
-              alt=""
-            />
-            <div className="w-full lg:w-1/2 flex flex-col items-start justify-center">
-              <h2 className="text-4xl font-semibold mb-4 text-[#7EBD42]">Your Style, Perfected. <br /> Every personalization Fulfilled.</h2>
-              <p className="text-gray-700  mb-5">
-              At ThreadHive, our expert tailors offer personalized recommendations to perfect your style. With meticulous attention to detail and unparalleled craftsmanship, they ensure every garment reflects your unique vision. Discover the difference of tailored excellence at ThreadHive.
-              </p>
-              <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 items-center hover:bg-[#e2e2e2] border-2 border-solid border-gray-400">
-                Create your Designs <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
+            {Array.from({ length: 12 }).map((_, index) => (
+              <img
+                key={index}
+                alt={`Logo ${index + 1}`}
+                className="m-4 sm:m-0"
+                height="40"
+                src="/placeholder.svg"
+                style={{
+                  aspectRatio: "100/40",
+                  objectFit: "cover",
+                }}
+                width="100"
+              />
+            ))}
           </div>
         </section>
       </main>
