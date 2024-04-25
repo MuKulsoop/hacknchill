@@ -48,7 +48,7 @@ function ArrowRightIcon(props) {
 export default function Home() {
   return (
     <div className=" min-h-screen ">
-      <header className="bg-[#005D9c] max-w-7xl mx-auto pt-10 pb-10 px-4 sm:px-6 lg:px-8 rounded-bl-lg rounded-br-lg">
+      <header className="bg-[#005D9c] max-w-100 pt-10 pb-10 px-4 sm:px-6 lg:px-8 rounded-bl-lg rounded-br-lg">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="flex items-start justify-center flex-col">
             <h1 className="text-4xl font-500 text-white leading-tight sm:text-5xl md:text-6xl">
