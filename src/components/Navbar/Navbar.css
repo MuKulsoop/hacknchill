@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-    background-color: #EFEFEF;
+    background-color: #f3f3f3;
     color: black;
     display: flex;
     justify-content: space-between;
@@ -62,9 +62,9 @@ ul li:hover ul {
 
 .customer-dropdown {
     position: relative;
-    margin-right: 40px;
+    /* margin-right: 10px; */
     background-color: inherit;
-    padding: 12px;
+    /* padding: 12px; */
     color: #000000;
     display: flex;
     align-items: center;
@@ -73,16 +73,40 @@ ul li:hover ul {
 
 .customer{
     position: relative;
-    border: solid 1px grey;
+    border: solid 1.5px #cfcfcf;
     display: flex;
     border-radius: 20px;
     height: auto;
-    padding: 5px 10px 5px 5px ;
+    padding: 5px   ;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .customer, ion-icon {
-    margin: 4px 6px;
+    margin: 2px 6px;
+    /* font-size: 24px; */
     
+}
+.logIn{
+    display: flex;
+    border: solid 1.5px #cfcfcf;
+    /* background: #000000;
+    color: #fff; */
+    border-radius: 20px;
+    height: auto;
+    padding: 5px 10px  ;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.signUp{
+    display: flex;
+    background: #000000;
+    color: #fff;
+    border-radius: 20px;
+    height: auto;
+    padding: 5px 10px  ;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
 }
