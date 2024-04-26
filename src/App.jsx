@@ -8,6 +8,8 @@ import Contact from './components/Contact/Contact.jsx';
 import Details from "./components/Details/Details.jsx";
 import Footer from "./components/Footer/Footer.jsx"
 import Posts from './components/Posts/Posts.jsx';
+import Login from "./components/Login/Login.jsx"
+import Signup from './components/Login/Signup.jsx';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
        <Route path='/home' exact element={<Home />} />
        <Route path='/details' exact element={<Details />} />
        <Route path='/posts' exact element={<Posts />} />
+       <Route path='/login' exact element={<Login />} />
+       <Route path='/signup' exact element={<Signup />} />
        {/* <Route path='/games' element={<Games/>}/>
        <Route path='/about' element={<About/>}/>
        <Route path='/sign-up' element={<SignUp/>}/> */}

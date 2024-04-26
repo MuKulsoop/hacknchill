@@ -3,7 +3,13 @@ import "./Home.css";
 
 // TickIcon component for outlined tick icon
 function TickIcon(props) {
-  const { size = 24, strokeWidth = 2, color = 'currentColor', backgroundColor = 'white', ...rest } = props;
+  const {
+    size = 24,
+    strokeWidth = 2,
+    color = "currentColor",
+    backgroundColor = "white",
+    ...rest
+  } = props;
 
   return (
     <svg
@@ -18,11 +24,16 @@ function TickIcon(props) {
       <circle cx="12" cy="12" r="10" fill={backgroundColor} stroke="none" />
 
       {/* Tick symbol */}
-      <path d="M9 12l2 2 4-4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M9 12l2 2 4-4"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
-
 
 // ArrowRightIcon component for arrow pointing right
 function ArrowRightIcon(props) {
@@ -43,7 +54,7 @@ function ArrowRightIcon(props) {
       <polyline points="12 5 19 12 12 19" />
     </svg>
   );
-}  
+}
 
 export default function Home() {
   return (
@@ -57,7 +68,9 @@ export default function Home() {
             <ul className="mt-4 space-y-2 flex flex-row items-start sm:flex-col sm:justify-center sm:items-start">
               <li className="flex items-center text-white pl-0">
                 <TickIcon size={30} color="black" backgroundColor="white" />
-                <span className="ml-2">G3's Leader in global employment platforms</span>
+                <span className="ml-2">
+                  G3's Leader in global employment platforms
+                </span>
               </li>
               <li className="flex items-center text-white pl-0">
                 <TickIcon size={30} color="black" backgroundColor="white" />
@@ -65,12 +78,14 @@ export default function Home() {
               </li>
             </ul>
 
-            <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] px-4 py-2 flex items-center justify-between hover:bg-[#e2e2e2]">
+            <Button
+              className="mt-6 rounded-lg bg-white text-[#0C4A6E] px-4 py-2 flex items-center justify-between hover:bg-[#e2e2e2]"
+              onClick={() => {
+                window.location.href = "/login";
+              }}
+            >
               Get Started Now <ArrowRightIcon className="ml-2 h-5 w-5" />
             </Button>
-
-
-
           </div>
           <div>
             {/* Placeholder image */}
@@ -99,116 +114,171 @@ export default function Home() {
       <main className="max-w-7xl mx-auto mt-12 px-4 sm:px-6 lg:px-8">
         <section className="text-center py-12 bg-white rounded-lg">
           <h2 className="text-3xl font-bold text-[#8f8f8f] sm:text-4xl md:text-5xl">
-            Trusted by <span className="text-[#424242]">25,000+</span> companies from startups to enterprise
+            Trusted by <span className="text-[#424242]">25,000+</span> companies
+            from startups to enterprise
           </h2>
           <div className="flex flex-wrap justify-center items-center mt-8 gap-4">
             {/* Placeholder images */}
             <div className="flex flex-wrap justify-center items-center mt-8 gap-6">
-              <img src="/images/Company1.jpeg" alt="Company 1" className="h-13" />
-              <img src="/images/Company2.jpeg" alt="Company 2" className="h-12" />
-              <img src="/images/Company3.jpeg" alt="Company 3" className="h-18" />
-              <img src="/images/Company4.jpeg" alt="Company 4" className="h-8" />
-              <img src="/images/Company5.jpeg" alt="Company 5" className="h-8" />
-              <img src="/images/Company6.jpeg" alt="Company 5" className="h-10" />
+              <img
+                src="/images/Company1.jpeg"
+                alt="Company 1"
+                className="h-13"
+              />
+              <img
+                src="/images/Company2.jpeg"
+                alt="Company 2"
+                className="h-12"
+              />
+              <img
+                src="/images/Company3.jpeg"
+                alt="Company 3"
+                className="h-18"
+              />
+              <img
+                src="/images/Company4.jpeg"
+                alt="Company 4"
+                className="h-8"
+              />
+              <img
+                src="/images/Company5.jpeg"
+                alt="Company 5"
+                className="h-8"
+              />
+              <img
+                src="/images/Company6.jpeg"
+                alt="Company 5"
+                className="h-10"
+              />
             </div>
           </div>
-
-
         </section>
       </main>
       <main className="bg-gray-800 w-full p-10 rounded-lg">
-      <h2 className="text-white text-4xl font-bold text-center mb-8">You can do it all. <br /> With ThreadHive.</h2>
+        <h2 className="text-white text-4xl font-bold text-center mb-8">
+          You can do it all. <br /> With ThreadHive.
+        </h2>
 
-      {/* Main Section Container */}
-      <section className="mx-auto p-8 flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8"
-        style={{
-          width: '85%',
-          borderBottom: '1.5px solid #ddd'
-        }}
-      >
-        {/* Left Card - Tailor Discovery & Alterations */}
-        <div className="bg-white rounded-lg w-full lg:w-1/2 mr-0 lg:mr-4">
-          <div className="p-6 pt-10 h-full">
-            <h3 className="text-3xl font-semibold mb-3">Tailor Discovery & Alterations</h3>
-            <p className="text-black mb-5">
-              Instead of setting up your own entities, experience the speed of HireGO’s automated global hiring. Create compliant employment agreements and set up payroll and benefits—in a matter of clicks.
-            </p>
-            <div className="rounded-lg h-64 bg-cover bg-center"
-              style={{
-                backgroundImage: 'url(https://s3-alpha-sig.figma.com/img/a565/2b40/e3e2f7b926d44b2f122ad82fc873447a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KUX6UHX7bRiBvSScawRic37zcuVDBQqCctFssNNiDS~e4xF3NS13tmvb67tQEkS4tC1-Pd8inr5xmy3AYR8hq1ZDZjUFYb~nlQoZ5KKkN~yBkisLRj~qjSW08MXbDJQca6K6tkLkUajAAN0~EZaWNfPBVnFMK6IooxR58yx3QOCMTQu29uGSivRAIgYrSPiTPzzXyHYaBirgCdGfKiq3UO2qDmFZoZ5~rAWXaojlaKl2MD6SQ1Gq9znCb9ZryJiAjZX0Czb0MRL1iOLkpf~GtaW2tJfSH9F5hsoUQv6ZzUm2pdsy2k5a6zQN545YjY3x96CbG263IXSMHpn3xYBYjQ__)',
-              }}
-            />
-            <Button className="mt-6 rounded-lg bg-gray-300 text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">
-              Find tailors around you <ArrowRightIcon className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
-        </div>
-
-        {/* Right Cards Container */}
-        <div className="w-full lg:w-1/2 flex flex-col space-y-8">
-          {/* Top Right Card - Find Best Manufacturers near You */}
-          <div className="bg-[#7EBD42] rounded-lg p-6 pt-10">
-            <h3 className="text-white text-3xl font-semibold mb-4">Find Best Manufacturers near You</h3>
-            <p className="text-white">
-              Generate, edit, and sign compliant contracts in minutes and access management tools to streamline paperwork, onboarding, and payments.
-            </p>
-            <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">
-              Find nearby Manufacturers <ArrowRightIcon className="ml-2 h-5 w-5" />
-            </Button>
+        {/* Main Section Container */}
+        <section
+          className="mx-auto p-8 flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8"
+          style={{
+            width: "85%",
+            borderBottom: "1.5px solid #ddd",
+          }}
+        >
+          {/* Left Card - Tailor Discovery & Alterations */}
+          <div className="bg-white rounded-lg w-full lg:w-1/2 mr-0 lg:mr-4">
+            <div className="p-6 pt-10 h-full">
+              <h3 className="text-3xl font-semibold mb-3">
+                Tailor Discovery & Alterations
+              </h3>
+              <p className="text-black mb-5">
+                Instead of setting up your own entities, experience the speed of
+                HireGO’s automated global hiring. Create compliant employment
+                agreements and set up payroll and benefits—in a matter of
+                clicks.
+              </p>
+              <div
+                className="rounded-lg h-64 bg-cover bg-center"
+                style={{
+                  backgroundImage:
+                    "url(https://s3-alpha-sig.figma.com/img/a565/2b40/e3e2f7b926d44b2f122ad82fc873447a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KUX6UHX7bRiBvSScawRic37zcuVDBQqCctFssNNiDS~e4xF3NS13tmvb67tQEkS4tC1-Pd8inr5xmy3AYR8hq1ZDZjUFYb~nlQoZ5KKkN~yBkisLRj~qjSW08MXbDJQca6K6tkLkUajAAN0~EZaWNfPBVnFMK6IooxR58yx3QOCMTQu29uGSivRAIgYrSPiTPzzXyHYaBirgCdGfKiq3UO2qDmFZoZ5~rAWXaojlaKl2MD6SQ1Gq9znCb9ZryJiAjZX0Czb0MRL1iOLkpf~GtaW2tJfSH9F5hsoUQv6ZzUm2pdsy2k5a6zQN545YjY3x96CbG263IXSMHpn3xYBYjQ__)",
+                }}
+              />
+              <Button className="mt-6 rounded-lg bg-gray-300 text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">
+                Find tailors around you{" "}
+                <ArrowRightIcon className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
           </div>
 
-          {/* Bottom Right Card - Custom Alterations & Clothing Creation */}
-          <div className="bg-[#005D9c] rounded-lg p-6 pt-10">
-            <h3 className="text-white text-3xl font-semibold mb-4">Custom Alterations & Clothing Creation</h3>
-            <p className="text-white">
-              Assess global worker misclassification risks and compliantly convert contractors to full-timers, all under one platform.
-            </p>
-            <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">
-              Customize it all <ArrowRightIcon className="ml-2 h-5 w-5" />
-            </Button>
+          {/* Right Cards Container */}
+          <div className="w-full lg:w-1/2 flex flex-col space-y-8">
+            {/* Top Right Card - Find Best Manufacturers near You */}
+            <div className="bg-[#7EBD42] rounded-lg p-6 pt-10">
+              <h3 className="text-white text-3xl font-semibold mb-4">
+                Find Best Manufacturers near You
+              </h3>
+              <p className="text-white">
+                Generate, edit, and sign compliant contracts in minutes and
+                access management tools to streamline paperwork, onboarding, and
+                payments.
+              </p>
+              <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">
+                Find nearby Manufacturers{" "}
+                <ArrowRightIcon className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+
+            {/* Bottom Right Card - Custom Alterations & Clothing Creation */}
+            <div className="bg-[#005D9c] rounded-lg p-6 pt-10">
+              <h3 className="text-white text-3xl font-semibold mb-4">
+                Custom Alterations & Clothing Creation
+              </h3>
+              <p className="text-white">
+                Assess global worker misclassification risks and compliantly
+                convert contractors to full-timers, all under one platform.
+              </p>
+              <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">
+                Customize it all <ArrowRightIcon className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Stats Section */}
-      <section className="mx-auto p-8 pb-0 flex flex-col lg:flex-row items-center justify-evenly"
-        style={{
-          width: '80%',
-        }}
-      >
-        {/* Stat Card - Team Size */}
-        <div className="text-center">
-          <h1 className="text-5xl text-blue-300 mb-2">25+</h1>
-          <p className="text-sm text-white">Team of more than 25 Hivers</p>
-        </div>
+        {/* Stats Section */}
+        <section
+          className="mx-auto p-8 pb-0 flex flex-col lg:flex-row items-center justify-evenly"
+          style={{
+            width: "80%",
+          }}
+        >
+          {/* Stat Card - Team Size */}
+          <div className="text-center">
+            <h1 className="text-5xl text-blue-300 mb-2">25+</h1>
+            <p className="text-sm text-white">Team of more than 25 Hivers</p>
+          </div>
 
-        {/* Stat Card - Customer Count */}
-        <div className="text-center">
-          <h1 className="text-5xl text-blue-300 mb-2">25,000+</h1>
-          <p className="text-sm text-white">Trusted by 25,000+ customers</p>
-        </div>
+          {/* Stat Card - Customer Count */}
+          <div className="text-center">
+            <h1 className="text-5xl text-blue-300 mb-2">25,000+</h1>
+            <p className="text-sm text-white">Trusted by 25,000+ customers</p>
+          </div>
 
-        {/* Stat Card - Onboarding Speed */}
-        <div className="text-center">
-          <h1 className="text-5xl text-blue-300 mb-2">&lt;48 hrs</h1>
-          <p className="text-sm text-white">Onboard Talent in as little as 48 hours</p>
-        </div>
-      </section>
-    </main>
+          {/* Stat Card - Onboarding Speed */}
+          <div className="text-center">
+            <h1 className="text-5xl text-blue-300 mb-2">&lt;48 hrs</h1>
+            <p className="text-sm text-white">
+              Onboard Talent in as little as 48 hours
+            </p>
+          </div>
+        </section>
+      </main>
       <main className="w-full p-10 bg-gray-100 flex items-center flex-col">
-        <h1 className="text-5xl text-stone-800 text-center mb-8 mt-8 font-bold" style={{
-          width: '50%',
-
-        }}>Discover Expert Tailors in your Area</h1>
+        <h1
+          className="text-5xl text-stone-800 text-center mb-8 mt-8 font-bold"
+          style={{
+            width: "50%",
+          }}
+        >
+          Discover Expert Tailors in your Area
+        </h1>
         <section className="mx-auto p-8 w-100 flex flex-col items-center justify-center">
           <div className="flex flex-col-reverse lg:flex-row-reverse items-center justify-evenly w-full">
             <div className="w-full lg:w-1/2 flex flex-col items-start justify-center lg:order-2">
-              <h2 className="text-4xl font-semibold mb-4 mt-4 text-[#005D9c]">Tailor Made Solutions for Your Style</h2>
+              <h2 className="text-4xl font-semibold mb-4 mt-4 text-[#005D9c]">
+                Tailor Made Solutions for Your Style
+              </h2>
               <p className="text-gray-700  mb-5">
-                Our expert tailors offer personalized recommendations to perfect your style. With meticulous attention to detail and unparalleled craftsmanship, they ensure every garment reflects your unique vision.
+                Our expert tailors offer personalized recommendations to perfect
+                your style. With meticulous attention to detail and unparalleled
+                craftsmanship, they ensure every garment reflects your unique
+                vision.
               </p>
               <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 items-center hover:bg-[#e2e2e2] border-2 border-solid border-gray-400">
-                Explore Tailors & Atelier Solutions <ArrowRightIcon className="ml-2 h-5 w-5" />
+                Explore Tailors & Atelier Solutions{" "}
+                <ArrowRightIcon className="ml-2 h-5 w-5" />
               </Button>
             </div>
             <img
@@ -218,16 +288,21 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col lg:flex-row items-center justify-evenly w-full mt-8">
-
             <img
               className="w-full lg:w-2/5 rounded-lg mb-8 lg:mb-0"
               src="https://s3-alpha-sig.figma.com/img/c67c/989d/f13c6b02f2c704a969ae98967095ecc2?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QRRkGhKBKh8o7vhRTLjKNexNSeKuWJMZ0dsJgHETKKtQyqgKh4IyUgBSco-ufUFZNPVQVHB9Edo9CBRgBiJ4VG5OXTTDP3PQ3Y~F3fE8ZjtL2v~OUNivxz8eUHxrEB59yLQ96lU6pu89cASfOCg7JCmax88O-4CVJM0m8zH2kTcQSgq4nZ-t2PgdtqHEviZcgkrP8gh2HueFxoZA4OylQXHGQcvvDUZruoqFect6Ns92382JAumNrST21MXN2QHtQvmlLkvuGSkI~h57Gd4He9vNR2OvT7MZzmGvZKSBEYS~R~Y3m9ek6MbG4JCUbPrd-J5OofaO1jW9L8X12d9u~Q__"
               alt=""
             />
             <div className="w-full lg:w-1/2 flex flex-col items-start justify-center">
-              <h2 className="text-4xl font-semibold mb-4 text-[#7EBD42]">Your Style, Perfected. <br /> Every personalization Fulfilled.</h2>
+              <h2 className="text-4xl font-semibold mb-4 text-[#7EBD42]">
+                Your Style, Perfected. <br /> Every personalization Fulfilled.
+              </h2>
               <p className="text-gray-700  mb-5">
-                At ThreadHive, our expert tailors offer personalized recommendations to perfect your style. With meticulous attention to detail and unparalleled craftsmanship, they ensure every garment reflects your unique vision. Discover the difference of tailored excellence at ThreadHive.
+                At ThreadHive, our expert tailors offer personalized
+                recommendations to perfect your style. With meticulous attention
+                to detail and unparalleled craftsmanship, they ensure every
+                garment reflects your unique vision. Discover the difference of
+                tailored excellence at ThreadHive.
               </p>
               <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 items-center hover:bg-[#e2e2e2] border-2 border-solid border-gray-400">
                 Create your Designs <ArrowRightIcon className="ml-2 h-5 w-5" />
@@ -235,10 +310,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <h1 className="text-5xl text-stone-800 text-center mb-8 mt-8 font-bold" style={{
-          width: '60%',
-
-        }}>Get started with ThreadHive in three easy steps.</h1>
+        <h1
+          className="text-5xl text-stone-800 text-center mb-8 mt-8 font-bold"
+          style={{
+            width: "60%",
+          }}
+        >
+          Get started with ThreadHive in three easy steps.
+        </h1>
         <section className="flex flex-col lg:flex-row items-center">
           {/* Left Image Container */}
           <div className="lg:w-1/2  rounded-lg p-7">
@@ -253,28 +332,49 @@ export default function Home() {
           <div className="lg:w-1/2  ">
             {/* Section 1 */}
             <div className="flex items-start mb-4 bg-[#eeeeee] rounded-lg p-6 mt-4 lg:mt-0">
-              <div className="min-w-8 min-h-8 bg-purple-400 text-white rounded-full flex items-center justify-center text-xl font-bold mr-4">1</div>
+              <div className="min-w-8 min-h-8 bg-purple-400 text-white rounded-full flex items-center justify-center text-xl font-bold mr-4">
+                1
+              </div>
               <div>
-                <h3 className="text-3xl text-stone-800 font-bold">Find your Tailor/Manufacturer</h3>
-                <p>Book a call with our global workforce consultants. We’ll set you up with a free account ready to suit your team’s needs.</p>
+                <h3 className="text-3xl text-stone-800 font-bold">
+                  Find your Tailor/Manufacturer
+                </h3>
+                <p>
+                  Book a call with our global workforce consultants. We’ll set
+                  you up with a free account ready to suit your team’s needs.
+                </p>
               </div>
             </div>
 
             {/* Section 2 */}
             <div className="flex items-start mb-4 bg-[#eeeeee] rounded-lg p-6 mt-4 lg:mt-0">
-              <div className="min-w-8 min-h-8 bg-purple-400 text-white rounded-full flex items-center justify-center text-xl font-bold mr-4">2</div>
+              <div className="min-w-8 min-h-8 bg-purple-400 text-white rounded-full flex items-center justify-center text-xl font-bold mr-4">
+                2
+              </div>
               <div>
-                <h3 className="text-3xl text-stone-800 font-bold">Chat with them and Negotiate</h3>
-                <p>From new hires to your existing workforce, onboard effortlessly with our self-serve platform.</p>
+                <h3 className="text-3xl text-stone-800 font-bold">
+                  Chat with them and Negotiate
+                </h3>
+                <p>
+                  From new hires to your existing workforce, onboard
+                  effortlessly with our self-serve platform.
+                </p>
               </div>
             </div>
 
             {/* Section 3 */}
             <div className="flex items-start mb-4 bg-[#eeeeee] rounded-lg p-6 mt-4 lg:mt-0">
-              <div className="min-w-8 min-h-8 bg-purple-400 text-white rounded-full flex items-center justify-center text-xl font-bold mr-4">3</div>
+              <div className="min-w-8 min-h-8 bg-purple-400 text-white rounded-full flex items-center justify-center text-xl font-bold mr-4">
+                3
+              </div>
               <div>
-                <h3 className="text-3xl text-stone-800 font-bold">Start the business</h3>
-                <p>From navigating local laws to support for your team members, our dedicated team will help you get set up seamlessly.</p>
+                <h3 className="text-3xl text-stone-800 font-bold">
+                  Start the business
+                </h3>
+                <p>
+                  From navigating local laws to support for your team members,
+                  our dedicated team will help you get set up seamlessly.
+                </p>
                 <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 items-center hover:bg-[#e2e2e2] border-2 border-solid border-gray-400">
                   Start Now <ArrowRightIcon className="ml-2 h-5 w-5" />
                 </Button>
@@ -282,9 +382,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
       </main>
-
     </div>
   );
 }
