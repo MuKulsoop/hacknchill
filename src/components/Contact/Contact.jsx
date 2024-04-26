@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
-// import { TextField, Button } from '@material-ui/core';
-import MailIcon from "@material-ui/icons/Mail";
-import PhoneIcon from "@material-ui/icons/Phone";
-import InstagramIcon from "@material-ui/icons/Instagram";
+
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -64,21 +61,30 @@ export default function Contact() {
           <h2 className="section-heading">Get in touch</h2>
           <div className="contact-details">
             <div className="contact-item">
-              <MailIcon className="icon" />
+              <div className="h-10 w-10 rounded-full bg-[#EFD28D] flex items-center justify-center">
+              <ion-icon name="mail-outline" ></ion-icon>
+              </div>
+            
               <div className="textWrapperContact">
                 <h3>Email</h3>
                 <span>hello@threadhive.com</span>
               </div>
             </div>
             <div className="contact-item">
-              <PhoneIcon className="icon" />
+              <div className="h-10 w-10 rounded-full bg-[#EFD28D] flex items-center justify-center">
+              <ion-icon name="call-outline"></ion-icon>
+              </div>
+            
               <div className="textWrapperContact">
                 <h3>Call or Text</h3>
                 <span>(239) 429-1190</span>
               </div>
             </div>
             <div className="contact-item">
-              <InstagramIcon className="icon" />
+              <div className="h-10 w-10 rounded-full bg-[#EFD28D] flex items-center justify-center">
+              <ion-icon name="logo-instagram"></ion-icon>
+              </div>
+            
               <div className="textWrapperContact">
                 <h3>Social</h3>
                 <span>@threadhive</span>
