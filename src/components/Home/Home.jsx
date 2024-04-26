@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import "./Home.css";
+import LazyLoad from 'react-lazyload';
 
 // TickIcon component for outlined tick icon
 function TickIcon(props) {
@@ -113,10 +114,12 @@ export default function Home() {
       </header>
       <main className="max-w-7xl mx-auto mt-12 px-4 sm:px-6 lg:px-8">
         <section className="text-center py-12 bg-white rounded-lg">
-          <h2 className="text-3xl font-bold text-[#8f8f8f] sm:text-4xl md:text-5xl">
-            Trusted by <span className="text-[#424242]">25,000+</span> companies
-            from startups to enterprise
-          </h2>
+          <LazyLoad height={200} once>
+            <h2 className="text-3xl font-bold text-[#8f8f8f] sm:text-4xl md:text-5xl animated-section">
+              Trusted by <span className="text-[#424242]">25,000+</span>{" "}
+              companies from startups to enterprise
+            </h2>
+          </LazyLoad>
           <div className="flex flex-wrap justify-center items-center mt-8 gap-4">
             {/* Placeholder images */}
             <div className="flex flex-wrap justify-center items-center mt-8 gap-6">
