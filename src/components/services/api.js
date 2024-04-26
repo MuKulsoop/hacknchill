@@ -6,9 +6,10 @@ const axiosInstance = axios.create(
     {
         baseURL: API_URL,
         timeout: 10000,
-        headers: {
-            "content-type": "application/json"
-        }
+        headers: { 
+            'Content-Type': 'application/json', 
+            'Cookie': 'csrftoken=YFPixeuwLQmkrAAJR2oUi2GhaVbX4W4y; sessionid=upn6h7kqqjyd21klqjlsn5k34ocn28ju'
+          }
     }
 )
 
@@ -70,24 +71,6 @@ const processError = (error) => {
     }
 }
 
-let config = {
-    method: 'post',
-    maxBodyLength: Infinity,
-    url: 'localhost:8000/api/register/',
-    headers: { 
-      'Content-Type': 'application/json', 
-      'Cookie': 'csrftoken=YFPixeuwLQmkrAAJR2oUi2GhaVbX4W4y; sessionid=upn6h7kqqjyd21klqjlsn5k34ocn28ju'
-    },
-    data : data
-  };
-
-  axios.request(config)
-  .then((response) => {
-    console.log(JSON.stringify(response.data));
-  })
-  .catch((error) => {
-    console.log(error);
-  });
 
 
 const API = {}

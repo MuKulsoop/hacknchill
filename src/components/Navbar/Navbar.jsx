@@ -76,19 +76,10 @@ const Navbar = () => {
         </Link>
         {/* Dropdown Content */}
         <ul className="absolute hidden bg-gray-200 shadow-md py-2 px-2 rounded-md mt-5 w-35 text-gray-800 customer-dropdown-menu top-5 flex items-center">
-          <li><Link to="#" className="block px-4 py-2 hover:bg-gray-100 rounded-md">Resources</Link></li>
-          <li><Link to="#" className="block px-4 py-2 hover:bg-gray-100 rounded-md">Resources</Link></li>
-          <li><Link to="#" className="block px-4 py-2 hover:bg-gray-100 rounded-md">Resources</Link></li>
+          <li><Link to="#" className="block px-4 py-2 hover:bg-gray-100 rounded-md">Seller</Link></li>
         </ul>
       </div>
     </div>
-
-        <div className="customer-dropdown">
-          <Link to="/details" className="customer">
-            <ion-icon name="earth-outline"></ion-icon>Customer
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </Link>
-        </div>
         <div>{/* Modal */}</div>
         <div className="customer-dropdown">
         <Link to="/login" className="logIn" onClick={handleLoginButtonClick}>
@@ -100,9 +91,6 @@ const Navbar = () => {
           Sign Up
         </Link>
       </div>
-          <Link to="/home" className="signUp" onClick={handleLoginButtonClick}>
-            Log In
-          </Link>
           {showModal && (
             <div className="modal fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-50 ">
               <div className="modal-content bg-white p-8 rounded shadow-md">
@@ -145,14 +133,7 @@ const Navbar = () => {
               </div>
             </div>
           )}
-          <Link to="/signup" className="signUp" >
-            Sign Up
-          </Link>
         </div>
-      </div>
-      
-
-
     </nav>
   );
 };
