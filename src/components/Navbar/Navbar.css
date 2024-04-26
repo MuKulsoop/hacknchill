@@ -23,7 +23,7 @@ nav {
     width: 50px;
     height: 50px;
 }
-ul {
+ul.items {
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -32,80 +32,83 @@ ul {
     display: flex;
 }
 
-ul li {
+ul.items li {
     margin-right: 20px;
     position: relative;
 }
 
-
-ul li  {
+ul.items li a {
     color: black;
     text-decoration: none;
     padding: 10px;
 }
 
-ul li ul {
+ul.items li ul {
     display: none;
     position: absolute;
-    background-color: #EFEFEF;
+    background-color: #efefef;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid grey;
 }
-ul li ul li {
+ul.items li ul li {
     padding: 10px;
 }
 
-ul li:hover ul {
+ul.items li:hover ul {
     display: block;
 }
 
 .customer-dropdown {
     position: relative;
-    /* margin-right: 10px; */
     background-color: inherit;
-    /* padding: 12px; */
     color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.customer{
+.customer-dropdown:hover .customer-dropdown-menu {
+    display: block;
+  }
+  
+  .customer-dropdown-menu {
+    display: none;
+  }
+  
+.customer {
     position: relative;
     border: solid 1.5px #cfcfcf;
     display: flex;
     border-radius: 20px;
     height: auto;
-    padding: 5px   ;
+    padding: 5px;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.customer, ion-icon {
-    margin: 2px 6px;
-    /* font-size: 24px; */
+.customer, .customer ion-icon {
     
+    margin: 2px 6px;
 }
-.logIn{
+
+.logIn {
     display: flex;
     border: solid 1.5px #cfcfcf;
-    /* background: #000000;
-    color: #fff; */
     border-radius: 20px;
     height: auto;
-    padding: 5px 10px  ;
+    padding: 5px 10px;
     align-items: center;
     justify-content: center;
     margin: 5px;
 }
-.signUp{
+
+.signUp {
     display: flex;
     background: #000000;
     color: #fff;
     border-radius: 20px;
     height: auto;
-    padding: 5px 10px  ;
+    padding: 5px 10px;
     align-items: center;
     justify-content: center;
     margin: 5px;
