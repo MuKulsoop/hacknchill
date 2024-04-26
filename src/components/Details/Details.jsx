@@ -33,17 +33,17 @@ const Details = () => {
         <div className="text-slate-700 col-span-9 ml-2">
           <h1 className="text-slate-700 text-2xl">My Info</h1>
           <h2 className="text-slate-700 text-xl pt-2">Contact Details</h2>
-          <div class="flex items-center justify-between border-b border-gray-300 py-4 px-6">
+          <div className="flex items-center justify-between border-b border-gray-300 py-4 px-6">
             <div>
-              <div class="font-bold text-lg text-slate-400">Name</div>
-              <span class="ml-1">Jhanvi</span>
+              <div className="font-bold text-lg text-slate-400">Name</div>
+              <span className="ml-1">Jhanvi</span>
             </div>
-            <div class="flex items-center">
-              <span class="mr-2 cursor-pointer">Change</span>
-              <button class="flex items-center justify-center bg-blue-500 text-white rounded-full w-8 h-8 hover:bg-blue-600 focus:outline-none">
+            <div className="flex items-center">
+              <span className="mr-2 cursor-pointer">Change</span>
+              <button className="flex items-center justify-center bg-blue-500 text-white rounded-full w-8 h-8 hover:bg-blue-600 focus:outline-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  className="h-5 w-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -56,17 +56,17 @@ const Details = () => {
               </button>
             </div>
           </div>
-          <div class="flex items-center justify-between border-b border-gray-300 py-4 px-6">
+          <div className="flex items-center justify-between border-b border-gray-300 py-4 px-6">
             <div>
-              <div class="font-bold text-lg text-slate-400">Email Address</div>
-              <span class="ml-1">Jhanvi@gmail.com</span>
+              <div className="font-bold text-lg text-slate-400">Email Address</div>
+              <span className="ml-1">Jhanvi@gmail.com</span>
             </div>
-            <div class="flex items-center">
-              <span class="mr-2 cursor-pointer">Change</span>
-              <button class="flex items-center justify-center bg-blue-500 text-white rounded-full w-8 h-8 hover:bg-blue-600 focus:outline-none">
+            <div className="flex items-center">
+              <span className="mr-2 cursor-pointer">Change</span>
+              <button className="flex items-center justify-center bg-blue-500 text-white rounded-full w-8 h-8 hover:bg-blue-600 focus:outline-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  className="h-5 w-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -79,17 +79,17 @@ const Details = () => {
               </button>
             </div>
           </div>
-          <div class="flex items-center justify-between border-b border-gray-300 py-4 px-6">
+          <div className="flex items-center justify-between border-b border-gray-300 py-4 px-6">
             <div>
-              <div class="font-bold text-lg text-slate-400">Phone Number</div>
-              <span class="ml-1">8980252445</span>
+              <div className="font-bold text-lg text-slate-400">Phone Number</div>
+              <span className="ml-1">8980252445</span>
             </div>
-            <div class="flex items-center">
-              <span class="mr-2 cursor-pointer">Change</span>
-              <button class="flex items-center justify-center bg-blue-500 text-white rounded-full w-8 h-8 hover:bg-blue-600 focus:outline-none">
+            <div className="flex items-center">
+              <span className="mr-2 cursor-pointer">Change</span>
+              <button className="flex items-center justify-center bg-blue-500 text-white rounded-full w-8 h-8 hover:bg-blue-600 focus:outline-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  className="h-5 w-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -102,17 +102,17 @@ const Details = () => {
               </button>
             </div>
           </div>
-          <div class="flex items-center justify-between border-b border-gray-300 py-4 px-6">
+          <div className="flex items-center justify-between border-b border-gray-300 py-4 px-6">
             <div>
-              <div class="font-bold text-lg text-slate-400">Password</div>
-              <span class="ml-1">*********</span>
+              <div className="font-bold text-lg text-slate-400">Password</div>
+              <span className="ml-1">*********</span>
             </div>
-            <div class="flex items-center">
-              <span class="mr-2 cursor-pointer">Change</span>
-              <button class="flex items-center justify-center bg-blue-500 text-white rounded-full w-8 h-8 hover:bg-blue-600 focus:outline-none">
+            <div className="flex items-center">
+              <span className="mr-2 cursor-pointer">Change</span>
+              <button className="flex items-center justify-center bg-blue-500 text-white rounded-full w-8 h-8 hover:bg-blue-600 focus:outline-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  className="h-5 w-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -138,11 +138,11 @@ const Details = () => {
                 1/4 Pragatinagar Flats, opp. jain derasar , near Jainderasar,
                 Vijaynagar road{" "}
               </p>
-              <button class="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
+              <button className="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
                 {" "}
                 Home{" "}
               </button>
-              <button class="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
+              <button className="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
                 {" "}
                 Default Shipping Address{" "}
               </button>
@@ -158,11 +158,11 @@ const Details = () => {
                 1/4 Pragatinagar Flats, opp. jain derasar , near Jainderasar,
                 Vijaynagar road{" "}
               </p>
-              <button class="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
+              <button className="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
                 {" "}
                 Home{" "}
               </button>
-              <button class="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
+              <button className="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
                 {" "}
                 Default Shipping Address{" "}
               </button>
@@ -178,11 +178,11 @@ const Details = () => {
                 1/4 Pragatinagar Flats, opp. jain derasar , near Jainderasar,
                 Vijaynagar road{" "}
               </p>
-              <button class="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
+              <button className="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
                 {" "}
                 Home{" "}
               </button>
-              <button class="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
+              <button className="border text-gray-500 border-gray-500 px-4 py-2 rounded-md m-3 hover:bg-gray-200">
                 {" "}
                 Default Shipping Address{" "}
               </button>

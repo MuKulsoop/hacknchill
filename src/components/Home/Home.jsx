@@ -367,7 +367,7 @@ export default function Home() {
               />
             
             
-              <div className="lg:w-2/5 flex flex-col items-start justify-center p-10" style={{ width: "80%" }}>
+              <div className="lg:w-2/5 flex flex-col items-start justify-center p-10" style={{ width: "70%" }}>
                 <h2 className="text-4xl font-semibold mb-4 text-[#7EBD42]">
                   Your Style, Perfected. <br /> Every personalization Fulfilled.
                 </h2>
@@ -387,6 +387,7 @@ export default function Home() {
 
 
         </section>
+        <FadeIn delay={0.2} direction="down">
         <h1
           className="text-5xl text-stone-800 text-center mb-8 mt-8 font-bold"
           style={{
@@ -395,18 +396,28 @@ export default function Home() {
         >
           Get started with ThreadHive in three easy steps.
         </h1>
+        </FadeIn>
+        
         <section className="flex flex-col lg:flex-row items-center">
           {/* Left Image Container */}
-          <div className="lg:w-1/2  rounded-lg p-7">
+          {/* <FadeIn delay={0.2} direction="right"> */}
+          <div className="lg:w-1/2  rounded-lg p-7" >
             <img
               src="https://s3-alpha-sig.figma.com/img/44b0/b905/614782fdad8f444ab0e9a63191f57132?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WY7t284FztZj9mATpgTPjqqCFdA5BPBGSGf1-mSkRi3UrSj6zGntciPszJLgdJ-WhPo6xDgLeqwD2ApRUMlYR5humtXCJJ40P6yro~FKy0L5bap8tLqYjnlMcMHCOFnqXd6pVy0~Lubp3crh1YJ4eaG2~haBKJ7jGKlXCbalmAYJuXAUZU9AHiiQculXODo5De0xVJVxMNeT1bQe0EMeiOBCuvkF7hIEZ4Y36yH49uGzuSoeX8bTnnwVUlaxINIw81IfSlNUxpEfqul0lEDSjXx~VZYgftk-lOqNWI7LZfcR~qCk6R3P2OsqmoSJxJwDYeY8a--NyL5061ZSVwyMAw__"
               alt=""
               className="rounded-lg bg-purple-100"
+              // style={{
+              //   width:"50%"
+              // }}
             />
           </div>
+          {/* </FadeIn> */}
+          
 
           {/* Right Text Containers */}
-          <div className="lg:w-1/2  ">
+          {/* <FadeIn delay={0.3} direction="left"> */}
+          <div className="lg:w-1/2  " 
+          >
             {/* Section 1 */}
             <div className="flex items-start mb-4 bg-[#eeeeee] rounded-lg p-6 mt-4 lg:mt-0">
               <div className="min-w-8 min-h-8 bg-purple-400 text-white rounded-full flex items-center justify-center text-xl font-bold mr-4">
@@ -458,6 +469,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+          {/* </FadeIn> */}
+         
         </section>
       </main>
     </div>
