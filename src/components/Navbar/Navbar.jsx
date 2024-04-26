@@ -13,8 +13,8 @@ const Navbar = () => {
 
   const handleLoginOptionClick = (option) => {
     // Handle login option click (e.g., redirect to the respective login page)
-    console.log('Selected option:', option);
-    setShowModal(false)
+    console.log("Selected option:", option);
+    setShowModal(false);
   };
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -76,13 +76,11 @@ const Navbar = () => {
         </Link>
         {/* Dropdown Content */}
         <ul className="absolute hidden bg-gray-200 shadow-md py-2 px-2 rounded-md mt-5 w-35 text-gray-800 customer-dropdown-menu top-5 flex items-center">
-          <li><Link to="#" className="block px-4 py-2 hover:bg-gray-100 rounded-md">Resources</Link></li>
-          <li><Link to="#" className="block px-4 py-2 hover:bg-gray-100 rounded-md">Resources</Link></li>
-          <li><Link to="#" className="block px-4 py-2 hover:bg-gray-100 rounded-md">Resources</Link></li>
+          <li><Link to="#" className="block px-4 py-2 hover:bg-gray-100 rounded-md">Seller</Link></li>
         </ul>
       </div>
     </div>
-
+        <div>{/* Modal */}</div>
         <div className="customer-dropdown">
         <Link to="/login" className="logIn" onClick={handleLoginButtonClick}>
           Log In
@@ -93,10 +91,49 @@ const Navbar = () => {
           Sign Up
         </Link>
       </div>
-      </div>
-      
-
-
+          {showModal && (
+            <div className="modal fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-50 ">
+              <div className="modal-content bg-white p-8 rounded shadow-md">
+                <h2 className="text-2xl font-semibold mb-4">
+                  Login As :
+                </h2>
+                <Link
+                  to="/login"
+                  className="block w-full py-2 px-4 mb-2 bg-[#005D9C] text-white font-bold rounded hover:bg-blue-800 focus:outline-none focus:shadow-outline"
+                  onClick={() => handleLoginOptionClick("Customer")}
+                >
+                  Seller
+                </Link>
+                <Link
+                  to="/login"
+                  className="block w-full py-2 px-4 bg-gray-300 text-gray-800 font-bold rounded hover:bg-gray-400 focus:outline-none focus:shadow-outline"
+                  onClick={() => handleLoginOptionClick("Manufacturer")}
+                >
+                  Customer 
+                </Link>
+                {/* Close button */}
+                <button
+                  className="absolute top-0 right-0 mt-2 mr-2 text-gray-600 hover:text-gray-800"
+                  onClick={() => setShowModal(false)}
+                >
+                  <svg
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
     </nav>
   );
 };

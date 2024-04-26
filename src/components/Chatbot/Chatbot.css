@@ -1,0 +1,61 @@
+
+        /* Custom CSS for chatbot */
+        .chatbot {
+            background-color: #EFEFEF;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+            width: calc(2.5 * 1in); /* Width set to approximately 2.5 inches */
+            height: calc(3.5 * 1in); /* Height set to approximately 3 inches */
+            overflow: hidden;
+            transition: height 0.5s ease; /* Transition added for smooth resizing */
+        }
+
+        .chatbot .header {
+            background-color: #005D96;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .chatbot .content {
+            padding: 10px;
+            max-height: calc(3 * 1in - 80px); /* Adjusted height to accommodate header and footer */
+            overflow-y: auto;
+        }
+
+        .chatbot .footer {
+            background-color: #EFD28D;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+
+        .chatbot .footer input[type="text"] {
+            width: 4.2cm; /* Set input box width to 4.2cm */
+            height: 1cm; /* Set height to 1cm */
+            padding: 8px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            margin-right: 10px; /* Added space between input and button */
+        }
+
+        .chatbot .footer input[type="submit"] {
+            background-color: #7EBD42;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 1cm; /* Set height to 1cm */
+            width: 1.5cm; /* Set width to 1.2cm */
+            text-align: center; /* Align text in the center */
+            line-height: 1cm; /* Center text vertically */
+        }
+    
