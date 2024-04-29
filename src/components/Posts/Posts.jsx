@@ -40,7 +40,7 @@ const Posts = () => {
           All Products <ArrowRightIcon className="ml-2 h-5 w-5" />
         </Button>
         <section className="flex flex-col my-10 w-full items-center">
-          <div className="flex flex-wrap justify-evenly my-5 w-full">
+          <div className="flex flex-wrap items-start my-5 w-full">
             {Array.from({ length: 8 }).map((_, index) => (
               <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-5">
                 <div className="rounded-md border-2 border-solid border-stone-900 min-h-[300px] flex flex-col-reverse mx-3 bg-white">

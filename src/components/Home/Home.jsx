@@ -205,83 +205,40 @@ export default function Home() {
             You can do it all. <br /> With ThreadHive.
           </h2>
         </FadeIn>
-        <section
-          className="mx-auto p-8 flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8"
-          style={{
-            width: "85%",
-            borderBottom: "1.5px solid #ddd",
-          }}
-        >
+        <section className="mx-auto p-8 flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8" style={{ borderBottom: "1.5px solid #ddd", width: "90%" }}>
           {/* Left Card - Tailor Discovery & Alterations */}
           <FadeIn delay={0.2} direction="right">
-            <div className="bg-white rounded-lg lg:w-1/2 mr-0 lg:mr-4 min-h-[650px] max-h-[700px]" style={{
-              height: "100%",
-              width: "100%"
-            }}>
-              <div className="p-6 pt-10 h-full">
-                <h3 className="text-3xl font-semibold mb-3">
-                  Tailor Discovery & Alterations
-                </h3>
-                <p className="text-black mb-5">
-                  Instead of setting up your own entities, experience the speed of
-                  HireGO’s automated global hiring. Create compliant employment
-                  agreements and set up payroll and benefits—in a matter of
-                  clicks.
-                </p>
-                <div
-                  className="rounded-lg h-80 bg-cover bg-center"
-                  style={{
-                    backgroundImage:
-                      "url(https://s3-alpha-sig.figma.com/img/a565/2b40/e3e2f7b926d44b2f122ad82fc873447a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KUX6UHX7bRiBvSScawRic37zcuVDBQqCctFssNNiDS~e4xF3NS13tmvb67tQEkS4tC1-Pd8inr5xmy3AYR8hq1ZDZjUFYb~nlQoZ5KKkN~yBkisLRj~qjSW08MXbDJQca6K6tkLkUajAAN0~EZaWNfPBVnFMK6IooxR58yx3QOCMTQu29uGSivRAIgYrSPiTPzzXyHYaBirgCdGfKiq3UO2qDmFZoZ5~rAWXaojlaKl2MD6SQ1Gq9znCb9ZryJiAjZX0Czb0MRL1iOLkpf~GtaW2tJfSH9F5hsoUQv6ZzUm2pdsy2k5a6zQN545YjY3x96CbG263IXSMHpn3xYBYjQ__)",
-                    backgroundPosition: "0px -300px"
-                  }}
-                />
-                <Button className="mt-6 rounded-lg bg-gray-300 text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">
-                  Find tailors around you{" "}
-                  <ArrowRightIcon className="ml-2 h-5 w-5" />
-                </Button>
+            <div className="bg-white rounded-lg flex-1">
+              <div className="p-8 pt-10 ">
+                <h3 className="text-3xl font-semibold mb-3">Tailor Discovery & Alterations</h3>
+                <p className="text-black mb-5">Instead of setting up your own entities, experience the speed of HireGO’s automated global hiring. Create compliant employment agreements and set up payroll and benefits—in a matter of clicks.</p>
+                <div className="rounded-lg h-80 bg-cover bg-center" style={{ backgroundImage: "url(https://s3-alpha-sig.figma.com/img/a565/2b40/e3e2f7b926d44b2f122ad82fc873447a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KUX6UHX7bRiBvSScawRic37zcuVDBQqCctFssNNiDS~e4xF3NS13tmvb67tQEkS4tC1-Pd8inr5xmy3AYR8hq1ZDZjUFYb~nlQoZ5KKkN~yBkisLRj~qjSW08MXbDJQca6K6tkLkUajAAN0~EZaWNfPBVnFMK6IooxR58yx3QOCMTQu29uGSivRAIgYrSPiTPzzXyHYaBirgCdGfKiq3UO2qDmFZoZ5~rAWXaojlaKl2MD6SQ1Gq9znCb9ZryJiAjZX0Czb0MRL1iOLkpf~GtaW2tJfSH9F5hsoUQv6ZzUm2pdsy2k5a6zQN545YjY3x96CbG263IXSMHpn3xYBYjQ__)", backgroundPosition: "0px -300px" }}></div>
+                <Button className="mt-6 rounded-lg bg-gray-300 text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">Find tailors around you <ArrowRightIcon className="ml-2 h-5 w-5" /></Button>
               </div>
             </div>
           </FadeIn>
 
           {/* Right Cards Container */}
-          <FadeIn delay={0.2} direction="left">
-            <div className="w-full lg:w-1/2 flex flex-col space-y-8 min-h-[650px] max-h-[700px]" style={{
-              height: "100%",
-              width: "100%"
-            }}>
+          <FadeIn delay={0.2} direction="left" className="flex-1">
+            <div className="w-full flex flex-col h-full justify-between space-y-5">
               {/* Top Right Card - Find Best Manufacturers near You */}
-              <div className="bg-[#7EBD42] rounded-lg p-6  h-full">
-                <h3 className="text-white text-3xl font-semibold mb-4">
-                  Find Best Manufacturers near You
-                </h3>
-                <p className="text-white">
-                  Generate, edit, and sign compliant contracts in minutes and
-                  access management tools to streamline paperwork, onboarding, and
-                  payments.
-                </p>
-                <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">
-                  Find nearby Manufacturers{" "}
-                  <ArrowRightIcon className="ml-2 h-5 w-5" />
-                </Button>
+              <div className="bg-[#7EBD42] rounded-lg p-6 ">
+                <h3 className="text-white text-3xl font-semibold mb-4">Find Best Manufacturers near You</h3>
+                <p className="text-white">Generate, edit, and sign compliant contracts in minutes and access management tools to streamline paperwork, onboarding, and payments.</p>
+                <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">Find nearby Manufacturers <ArrowRightIcon className="ml-2 h-5 w-5" /></Button>
               </div>
 
               {/* Bottom Right Card - Custom Alterations & Clothing Creation */}
-              <div className="bg-[#005D9c] rounded-lg p-6  h-full">
-                <h3 className="text-white text-3xl font-semibold mb-4">
-                  Custom Alterations & Clothing Creation
-                </h3>
-                <p className="text-white">
-                  Assess global worker misclassification risks and compliantly
-                  convert contractors to full-timers, all under one platform.
-                </p>
-                <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">
-                  Customize it all <ArrowRightIcon className="ml-2 h-5 w-5" />
-                </Button>
+              <div className="bg-[#005D9c] rounded-lg p-6  ">
+                <h3 className="text-white text-3xl font-semibold mb-4">Custom Alterations & Clothing Creation</h3>
+                <p className="text-white">Assess global worker misclassification risks and compliantly convert contractors to full-timers, all under one platform.</p>
+                <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">Customize it all <ArrowRightIcon className="ml-2 h-5 w-5" /></Button>
               </div>
             </div>
           </FadeIn>
         </section>
+
+
 
 
 
@@ -358,46 +315,46 @@ export default function Home() {
 
           </div>
           <div className="flex flex-col lg:flex-row items-center justify-evenly w-full mt-8">
-            
-              <img
-                className="w-full lg:w-2/5 rounded-lg mb-8 lg:mb-0"
-                src="https://s3-alpha-sig.figma.com/img/c67c/989d/f13c6b02f2c704a969ae98967095ecc2?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QRRkGhKBKh8o7vhRTLjKNexNSeKuWJMZ0dsJgHETKKtQyqgKh4IyUgBSco-ufUFZNPVQVHB9Edo9CBRgBiJ4VG5OXTTDP3PQ3Y~F3fE8ZjtL2v~OUNivxz8eUHxrEB59yLQ96lU6pu89cASfOCg7JCmax88O-4CVJM0m8zH2kTcQSgq4nZ-t2PgdtqHEviZcgkrP8gh2HueFxoZA4OylQXHGQcvvDUZruoqFect6Ns92382JAumNrST21MXN2QHtQvmlLkvuGSkI~h57Gd4He9vNR2OvT7MZzmGvZKSBEYS~R~Y3m9ek6MbG4JCUbPrd-J5OofaO1jW9L8X12d9u~Q__"
-                alt=""
-                style={{ width: "40%" }} // Adjusted image width
-              />
-            
-            
-              <div className="lg:w-2/5 flex flex-col items-start justify-center p-10" style={{ width: "70%" }}>
-                <h2 className="text-4xl font-semibold mb-4 text-[#7EBD42]">
-                  Your Style, Perfected. <br /> Every personalization Fulfilled.
-                </h2>
-                <p className="text-gray-700 mb-5">
-                  At ThreadHive, our expert tailors offer personalized
-                  recommendations to perfect your style. With meticulous attention
-                  to detail and unparalleled craftsmanship, they ensure every
-                  garment reflects your unique vision. Discover the difference of
-                  tailored excellence at ThreadHive.
-                </p>
-                <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 items-center hover:bg-[#e2e2e2] border-2 border-solid border-gray-400">
-                  Create your Designs <ArrowRightIcon className="ml-2 h-5 w-5" />
-                </Button>
-              </div>
-           
+
+            <img
+              className="w-full lg:w-2/5 rounded-lg mb-8 lg:mb-0"
+              src="https://s3-alpha-sig.figma.com/img/c67c/989d/f13c6b02f2c704a969ae98967095ecc2?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QRRkGhKBKh8o7vhRTLjKNexNSeKuWJMZ0dsJgHETKKtQyqgKh4IyUgBSco-ufUFZNPVQVHB9Edo9CBRgBiJ4VG5OXTTDP3PQ3Y~F3fE8ZjtL2v~OUNivxz8eUHxrEB59yLQ96lU6pu89cASfOCg7JCmax88O-4CVJM0m8zH2kTcQSgq4nZ-t2PgdtqHEviZcgkrP8gh2HueFxoZA4OylQXHGQcvvDUZruoqFect6Ns92382JAumNrST21MXN2QHtQvmlLkvuGSkI~h57Gd4He9vNR2OvT7MZzmGvZKSBEYS~R~Y3m9ek6MbG4JCUbPrd-J5OofaO1jW9L8X12d9u~Q__"
+              alt=""
+              style={{ width: "40%" }} // Adjusted image width
+            />
+
+
+            <div className="lg:w-2/5 flex flex-col items-start justify-center p-10" style={{ width: "70%" }}>
+              <h2 className="text-4xl font-semibold mb-4 text-[#7EBD42]">
+                Your Style, Perfected. <br /> Every personalization Fulfilled.
+              </h2>
+              <p className="text-gray-700 mb-5">
+                At ThreadHive, our expert tailors offer personalized
+                recommendations to perfect your style. With meticulous attention
+                to detail and unparalleled craftsmanship, they ensure every
+                garment reflects your unique vision. Discover the difference of
+                tailored excellence at ThreadHive.
+              </p>
+              <Button className="mt-6 rounded-lg bg-white text-[#0C4A6E] py-2 items-center hover:bg-[#e2e2e2] border-2 border-solid border-gray-400">
+                Create your Designs <ArrowRightIcon className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+
           </div>
 
 
         </section>
         <FadeIn delay={0.2} direction="down">
-        <h1
-          className="text-5xl text-stone-800 text-center mb-8 mt-8 font-bold"
-          style={{
-            width: "60%",
-          }}
-        >
-          Get started with ThreadHive in three easy steps.
-        </h1>
+          <h1
+            className="text-5xl text-stone-800 text-center mb-8 mt-8 font-bold"
+            style={{
+              width: "60%",
+            }}
+          >
+            Get started with ThreadHive in three easy steps.
+          </h1>
         </FadeIn>
-        
+
         <section className="flex flex-col lg:flex-row items-center">
           {/* Left Image Container */}
           {/* <FadeIn delay={0.2} direction="right"> */}
@@ -406,17 +363,17 @@ export default function Home() {
               src="https://s3-alpha-sig.figma.com/img/44b0/b905/614782fdad8f444ab0e9a63191f57132?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WY7t284FztZj9mATpgTPjqqCFdA5BPBGSGf1-mSkRi3UrSj6zGntciPszJLgdJ-WhPo6xDgLeqwD2ApRUMlYR5humtXCJJ40P6yro~FKy0L5bap8tLqYjnlMcMHCOFnqXd6pVy0~Lubp3crh1YJ4eaG2~haBKJ7jGKlXCbalmAYJuXAUZU9AHiiQculXODo5De0xVJVxMNeT1bQe0EMeiOBCuvkF7hIEZ4Y36yH49uGzuSoeX8bTnnwVUlaxINIw81IfSlNUxpEfqul0lEDSjXx~VZYgftk-lOqNWI7LZfcR~qCk6R3P2OsqmoSJxJwDYeY8a--NyL5061ZSVwyMAw__"
               alt=""
               className="rounded-lg bg-purple-100"
-              // style={{
-              //   width:"50%"
-              // }}
+            // style={{
+            //   width:"50%"
+            // }}
             />
           </div>
           {/* </FadeIn> */}
-          
+
 
           {/* Right Text Containers */}
           {/* <FadeIn delay={0.3} direction="left"> */}
-          <div className="lg:w-1/2  " 
+          <div className="lg:w-1/2  "
           >
             {/* Section 1 */}
             <div className="flex items-start mb-4 bg-[#eeeeee] rounded-lg p-6 mt-4 lg:mt-0">
@@ -470,7 +427,7 @@ export default function Home() {
             </div>
           </div>
           {/* </FadeIn> */}
-         
+
         </section>
       </main>
     </div>
