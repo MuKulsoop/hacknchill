@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import "./Home.css";
 import FadeIn from "../FadeIn/FadeIn.jsx";
 import CountUp from 'react-countup';
@@ -131,7 +131,7 @@ export default function Home() {
                 alt="Tailor working on clothes"
                 className="rounded-lg w-full h-auto"
                 height="360"
-                src="https://s3-alpha-sig.figma.com/img/6622/c6f6/399e335de15f059fea02dcc7ef2e65f1?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SvhE0jCjzyk2q3aak7xdR5CaNfCi5L-~igTl9BUSsd2kxxrjci2FBb1~by4khHs1Q36QZ4hj7CIOPWQm01AriIRD7J2nBIjRBcqqeOE0YobKNKSkidJaSQnTmFR7QNiru~LXmfXIfci1LT3ECTGen-3I2pXWTqO8N37djvgH8qHgXSptjZL1bR6i7ZBJc35PjmR7GqOyMO5c7zaTMMVm-G4wRM58MmnjhcYLPuBmzqZGsXY4vREScK0vWsDo~3dT4vcRK7BmrMnJJ3R6o0iTYDHACAysQDpjTDRjKMr~ml3tEeEfVmN-PgaQUAnbic5NeAQeO1KtV4QmPBsnuzpQtg__"
+                src="https://res.cloudinary.com/djoebsejh/image/upload/v1715607517/Prescription_Testres/clqrpi9o0u8hodgm7hjs.png"
                 style={{
                   aspectRatio: "360/360",
                   objectFit: "cover",
@@ -212,7 +212,7 @@ export default function Home() {
               <div className="p-8 pt-10 ">
                 <h3 className="text-3xl font-semibold mb-3">Tailor Discovery & Alterations</h3>
                 <p className="text-black mb-5">Instead of setting up your own entities, experience the speed of HireGO’s automated global hiring. Create compliant employment agreements and set up payroll and benefits—in a matter of clicks.</p>
-                <div className="rounded-lg h-80 bg-cover bg-center" style={{ backgroundImage: "url(https://s3-alpha-sig.figma.com/img/a565/2b40/e3e2f7b926d44b2f122ad82fc873447a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KUX6UHX7bRiBvSScawRic37zcuVDBQqCctFssNNiDS~e4xF3NS13tmvb67tQEkS4tC1-Pd8inr5xmy3AYR8hq1ZDZjUFYb~nlQoZ5KKkN~yBkisLRj~qjSW08MXbDJQca6K6tkLkUajAAN0~EZaWNfPBVnFMK6IooxR58yx3QOCMTQu29uGSivRAIgYrSPiTPzzXyHYaBirgCdGfKiq3UO2qDmFZoZ5~rAWXaojlaKl2MD6SQ1Gq9znCb9ZryJiAjZX0Czb0MRL1iOLkpf~GtaW2tJfSH9F5hsoUQv6ZzUm2pdsy2k5a6zQN545YjY3x96CbG263IXSMHpn3xYBYjQ__)", backgroundPosition: "0px -300px" }}></div>
+                <div className="rounded-lg h-80 bg-cover bg-center" style={{ backgroundImage: "url(https://res.cloudinary.com/djoebsejh/image/upload/v1715607641/Prescription_Testres/h0k3zksajuoj10p1wjjz.png)", backgroundPosition: "0px -300px" }}></div>
                 <Button className="mt-6 rounded-lg bg-gray-300 text-[#0C4A6E] py-2 px-4 hover:bg-[#e2e2e2]">Find tailors around you <ArrowRightIcon className="ml-2 h-5 w-5" /></Button>
               </div>
             </div>
@@ -305,7 +305,7 @@ export default function Home() {
             <FadeIn delay={0.2} direction="left">
               <img
                 className="w-full lg:w-2/5 rounded-lg mt-8 lg:mt-0"
-                src="https://s3-alpha-sig.figma.com/img/f322/b0d8/c285a2f1a4f29c33ba23df12cc8aef6f?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CdwbKLVZzTZnvHreJ6vQgv3CO9L1meU6c6CxGg82LZcKVqDPHO9nBem8mysBZ-sRRY0~bRnYlc9RrCCfGlixtQbVlMX12r-fRwVCdJROXEd3rv~9HCU9vBLXZL6KYvVTn4YdeCOx~jDY7p90knZ-e4QhNlSmU~6MM~MoKGegOPRjnAjXAb~5UngMYihK8XlePxmOVhKj3TuSYauC0loxJRHPk74MMH2~tI13ZfSqIW1SvJ0ow5aiLWqB3t5M74oCEPCysX0yKs0Sd~IOU4dgajQwYEoDzc65VIL94dMYJScVRgYBP40WN7mpFdl5f9LhJFgKJmtKSdwSZZjwyObCRQ__"
+                src="https://res.cloudinary.com/djoebsejh/image/upload/v1715608399/Prescription_Testres/zat9qpe8w117amenhm1n.png"
                 alt=""
                 style={{
                   width: "60%"
@@ -318,7 +318,7 @@ export default function Home() {
 
             <img
               className="w-full lg:w-2/5 rounded-lg mb-8 lg:mb-0"
-              src="https://s3-alpha-sig.figma.com/img/c67c/989d/f13c6b02f2c704a969ae98967095ecc2?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QRRkGhKBKh8o7vhRTLjKNexNSeKuWJMZ0dsJgHETKKtQyqgKh4IyUgBSco-ufUFZNPVQVHB9Edo9CBRgBiJ4VG5OXTTDP3PQ3Y~F3fE8ZjtL2v~OUNivxz8eUHxrEB59yLQ96lU6pu89cASfOCg7JCmax88O-4CVJM0m8zH2kTcQSgq4nZ-t2PgdtqHEviZcgkrP8gh2HueFxoZA4OylQXHGQcvvDUZruoqFect6Ns92382JAumNrST21MXN2QHtQvmlLkvuGSkI~h57Gd4He9vNR2OvT7MZzmGvZKSBEYS~R~Y3m9ek6MbG4JCUbPrd-J5OofaO1jW9L8X12d9u~Q__"
+              src="https://res.cloudinary.com/djoebsejh/image/upload/v1715608512/Prescription_Testres/htlknn2quf9b6rcou4si.png"
               alt=""
               style={{ width: "40%" }} // Adjusted image width
             />
@@ -360,7 +360,7 @@ export default function Home() {
           {/* <FadeIn delay={0.2} direction="right"> */}
           <div className="lg:w-1/2  rounded-lg p-7" >
             <img
-              src="https://s3-alpha-sig.figma.com/img/44b0/b905/614782fdad8f444ab0e9a63191f57132?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WY7t284FztZj9mATpgTPjqqCFdA5BPBGSGf1-mSkRi3UrSj6zGntciPszJLgdJ-WhPo6xDgLeqwD2ApRUMlYR5humtXCJJ40P6yro~FKy0L5bap8tLqYjnlMcMHCOFnqXd6pVy0~Lubp3crh1YJ4eaG2~haBKJ7jGKlXCbalmAYJuXAUZU9AHiiQculXODo5De0xVJVxMNeT1bQe0EMeiOBCuvkF7hIEZ4Y36yH49uGzuSoeX8bTnnwVUlaxINIw81IfSlNUxpEfqul0lEDSjXx~VZYgftk-lOqNWI7LZfcR~qCk6R3P2OsqmoSJxJwDYeY8a--NyL5061ZSVwyMAw__"
+              src="https://res.cloudinary.com/djoebsejh/image/upload/v1715608560/Prescription_Testres/xmzvtbzfjpmi3nidczq6.png"
               alt=""
               className="rounded-lg bg-purple-100"
             // style={{

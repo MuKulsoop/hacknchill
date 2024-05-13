@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -140,7 +140,7 @@ function Footer() {
       <div className="bg-gray-800 py-4">
         <div className="container mx-auto flex justify-between items-center">
           <Link
-            to="/home"
+            to="/"
             className="text-xl font-bold text-white flex flex-row items-center"
           >
             {/* <img src="/images/logo.png" alt="" className='h-5 w-5 mx-2'/> */}

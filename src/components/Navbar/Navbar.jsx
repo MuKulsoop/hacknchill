@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -22,9 +22,9 @@ const Navbar = () => {
   return (
     <nav>
       <ul className="items">
-        <Link to="/home"><div className="logo"><img src="/images/logo.png" alt="" /></div></Link>
+        <Link to="/"><div className="logo"><img src="/images/logo.png" alt="" /></div></Link>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link

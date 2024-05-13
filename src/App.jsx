@@ -19,7 +19,7 @@ function App() {
      <Routes>
        {/* <Route index exact element={<Home/>} /> */}
        <Route path='/contact' exact element={<Contact/>} />
-       <Route path='/home' exact element={<Home />} />
+       <Route path='/' exact element={<Home />} />
        <Route path='/details' exact element={<Details />} />
        <Route path='/posts' exact element={<Posts />} />
        <Route path='/login' exact element={<Login />} />
