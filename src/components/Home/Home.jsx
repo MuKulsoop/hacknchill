@@ -360,7 +360,7 @@ export default function Home() {
           {/* <FadeIn delay={0.2} direction="right"> */}
           <div className="lg:w-1/2  rounded-lg p-7" >
             <img
-              src="https://res.cloudinary.com/djoebsejh/image/upload/v1715608560/Prescription_Testres/xmzvtbzfjpmi3nidczq6.png"
+              src="https://res.cloudinary.com/djoebsejh/image/upload/v1715610327/Prescription_Testres/yezf5jaj6aqpxxuqoua1.png"
               alt=""
               className="rounded-lg bg-purple-100"
             // style={{
