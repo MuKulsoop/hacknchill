@@ -305,7 +305,7 @@ export default function Home() {
             <FadeIn delay={0.2} direction="left">
               <img
                 className="w-full lg:w-2/5 rounded-lg mt-8 lg:mt-0"
-                src="https://res.cloudinary.com/djoebsejh/image/upload/v1715608399/Prescription_Testres/zat9qpe8w117amenhm1n.png"
+                src="https://res.cloudinary.com/djoebsejh/image/upload/v1715610169/Prescription_Testres/dbhqgtyfdefxbplxt4fd.png"
                 alt=""
                 style={{
                   width: "60%"
