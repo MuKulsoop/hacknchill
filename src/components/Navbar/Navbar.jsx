@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav>
       <ul className="items">
-        <Link to="/"><div className="logo"><img src="/images/logo.png" alt="" /></div></Link>
+        <Link to="/"><div className="logo"><img src="https://res.cloudinary.com/djoebsejh/image/upload/v1715609494/Prescription_Testres/gjrmf6kwvf74khab1fgr.png" alt="" /></div></Link>
         <li>
           <Link to="/">Home</Link>
         </li>
